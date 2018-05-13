@@ -1,0 +1,10 @@
+Dennis:50.0
+Lola:1.0
+Tony:32.0
+Zach:10.0
+Jerry:78.0
+Tom:32.0
+Mclovin:8.0
+Timmy:16.0
+crehm:90.5555
+test:0.0

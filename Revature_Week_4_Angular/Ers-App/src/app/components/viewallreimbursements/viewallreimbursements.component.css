@@ -1,0 +1,29 @@
+.table-responsive {
+    width: 140%;
+}
+
+.container {
+  max-width: 120%;
+   margin: 0px;
+}
+
+#goBack {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    
+}
+
+button {
+    margin: 1rem;
+}

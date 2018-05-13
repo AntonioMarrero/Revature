@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="jumbotron">
+
+    <form class="form-horizontal">
+      <h2 class="text-center">{{ loggedUser.userName | uppercase }}</h2>
+      <h2 class="text-center">Add a Reimbursement</h2>
+      <br>
+      <br>
+      <div class="form-group">
+        <label class="control-label col-sm-2"
+        for="amount">Amount: </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="amount"
+          name="reimb.reimbAmount"
+          placeholder="Enter an Amount" [(ngModel)]="reimb.reimbAmount">
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label class="control-label col-sm-2"
+          for="description">Description: </label>
+          <div class="col-sm-10">
+            <textarea type="text" class="form-control" id="description"
+            name="reimb.desc" rows="5"
+            placeholder="Enter a Description" [(ngModel)]="reimb.desc">
+            </textarea>
+          </div>
+        </div>
+
+        <!-- Change to radio buttons to show the string value instead of the type number -->
+        <div class="form-group">
+          <label for="type">Type:</label><br>
+          <input type="radio" id="Lodging" name="reimb.type" value=1 [(ngModel)]="reimb.type"> Lodging<br>
+          <input type="radio" id="Travel" name="reimb.type" value=2 [(ngModel)]="reimb.type"> Travel<br>
+          <input type="radio" id="Food" name="reimb.type" value=3 [(ngModel)]="reimb.type"> Food<br>
+          <input type="radio" id="Other" name="reimb.type" value=4 [(ngModel)]="reimb.type"> Other<br>
+        </div>
+
+        <!-- <div class="form-group">
+            <label class="control-label col-sm-2"
+            for="type">Type: </label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="type"
+              name="reimb.type"
+              placeholder="Enter a Type" [(ngModel)]="reimb.type">
+            </div>
+          </div> -->
+
+          
+
+              <div class="form-group align-center"> 
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary" id="addReimb" (click)="addReimb()">Submit</button>
+                  </div>
+                </div>
+    </form>
+
+  </div>
+</div>
+
+<div>
+    <button class="btn btn-primary" id="goBack" (click)="goBack()">go back</button>
+</div>

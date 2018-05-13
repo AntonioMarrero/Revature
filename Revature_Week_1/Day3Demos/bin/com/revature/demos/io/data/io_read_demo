@@ -1,0 +1,6 @@
+This is my text file!
+We can use the BufferedReader object to read from it.
+We can read it in two different ways:
+By either using the readLine() method
+Or by using the read() method
+Be sure to catch IOExceptions (as if Eclipse would let you forget)

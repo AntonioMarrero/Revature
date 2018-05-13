@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="jumbotron">
+
+    <form class="form-horizontal">
+      <h2 class="text-center">Resgistration Form</h2>
+      <br>
+      <br>
+      <div class="form-group">
+        <label class="control-label col-sm-2"
+        for="unsername">Username: </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="username"
+          name="user.userName"
+          placeholder="Enter a Username" [(ngModel)]="user.userName">
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label class="control-label col-sm-2"
+          for="password">Password: </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="password"
+            name="user.pw"
+            placeholder="Enter a Password" [(ngModel)]="user.pw">
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2"
+            for="firstname">First Name: </label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="firstname"
+              name="user.firstName"
+              placeholder="Enter your First Name" [(ngModel)]="user.firstName">
+            </div>
+          </div>
+
+          <div class="form-group">
+              <label class="control-label col-sm-2"
+              for="lastname">Last Name: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="lastname"
+                name="user.lastName"
+                placeholder="Enter your Last Name" [(ngModel)]="user.lastName">
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2"
+                for="email">Email: </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="email"
+                  name="user.email"
+                  placeholder="Enter an email address" [(ngModel)]="user.email">
+                </div>
+              </div>
+      
+              <div class="form-group">
+                  <label class="control-label col-sm-2"
+                  for="roleid">Role Id: </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="roleid"
+                    name="user.userRoleId"
+                    placeholder="Enter 1 for employees" [(ngModel)]="user.userRoleId">
+                  </div>
+              </div>
+
+              <div class="form-group align-center"> 
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary" id="register" (click)="register()">Register</button>
+                  </div>
+                </div>
+    </form>
+
+  </div>
+</div>

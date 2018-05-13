@@ -1,0 +1,25 @@
+.container {
+    max-width: 100%;
+}
+
+.jumbotron {
+    width: 75%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+button {
+    padding: 3rem;
+    font-size: 2rem;
+    margin-top: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.col-md-4 {
+    margin-right: 15px;
+}
+
+h2, h3 {
+    text-align: center;
+    font-weight: bolder;
+}

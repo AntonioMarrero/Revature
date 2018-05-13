@@ -1,0 +1,40 @@
+<div class="container" id="userInfo">
+  <h2>Reimbursements for {{ loggedUser.userName | uppercase }}</h2>
+  <br>           
+  <table class="table" id="userTable">
+    <thead>
+      <tr>        
+        <th>Amount</th>
+        <th>Description</th>
+        <th>Submitted</th>
+        <th>Status</th>
+        <th>Last Updtated</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of reimburs" id="firsrow">
+        <td>{{ t.reimbAmount | currency }}</td>
+        <td>{{ t.desc }}</td>
+        <td>{{ t.subDate | date }}</td>
+        <td [ngSwitch]="t.statusId">
+          <div *ngSwitchCase="1">Pending</div>
+          <div *ngSwitchCase="2">Approved</div>
+          <div *ngSwitchCase="3">Denied</div>
+        </td>
+        <td>{{ t.resolved | date }}</td>
+        <td [ngSwitch]= "t.type">
+          <div *ngSwitchCase="1">Lodging</div>
+          <div *ngSwitchCase="2">Travel</div>
+          <div *ngSwitchCase="3">Food</div>
+          <div *ngSwitchCase="4">Other</div>
+        </td>        
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+<div>
+<button class="btn btn-primary" (click)="goBack()">go back</button>
+</div>

@@ -1,0 +1,32 @@
+.control-label {
+    width: 100%;
+    text-align: left;
+}
+
+#addReimb {
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.form-group {
+margin-left: 6rem;
+}
+
+.jumbotron {
+    width: 140%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#goBack {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    width: 15rem;
+}
+
+button {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

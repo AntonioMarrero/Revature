@@ -1,0 +1,4 @@
+Dennis:50.0
+Lola:1.0
+Tony:32.0
+Zach:10.0

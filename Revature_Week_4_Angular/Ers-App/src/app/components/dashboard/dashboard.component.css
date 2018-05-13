@@ -1,0 +1,21 @@
+button {
+    padding: 3rem;
+    font-size: 2rem;
+    margin-top: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.col-md-4 {
+    margin-right: 15px;
+}
+
+h2, h3 {
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    font-weight: bolder;
+}
+
+.jumbotron {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

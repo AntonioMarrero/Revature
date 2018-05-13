@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="jumbotron">
+  <h2>Manager's Dashboard</h2>
+  <br>
+  <h3>Welcome, {{ loggedUser.userName | uppercase}}</h3>
+  
+  </div>
+
+  <div class="container-fluid">
+      <div class="row" id="userMenu">
+          <div class="col-md-3" id="options">
+              <button type="submit" class="btn btn-info" id="viewreimb" (click)="viewallreimb()">View All Reimbursements</button>
+          </div>
+         
+      </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+  <h2>Manager:  {{ loggedUser.userName | uppercase }}</h2>
+  <p></p>   
+  <div class="table-responsive">        
+  <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Amount</th>
+        <th>Description</th>
+        <th>Submitted</th>
+        <th>Status</th>
+        <th>Last Updtated</th>
+        <th>Type</th>
+        <th>Approval</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of allreimburs" id="firsrow">
+        <td>{{ t.reimbAmount | currency }}</td>
+        <td>{{ t.desc }}</td>
+        <td>{{ t.subDate | date }}</td>
+        <td [ngSwitch]="t.statusId">
+          <div *ngSwitchCase="1">Pending</div>
+          <div *ngSwitchCase="2">Approved</div>
+          <div *ngSwitchCase="3">Denied</div>
+        </td>
+        <td>{{ t.resolved | date }}</td>
+        <td [ngSwitch]= "t.type">
+          <div *ngSwitchCase="1">Lodging</div>
+          <div *ngSwitchCase="2">Travel</div>
+          <div *ngSwitchCase="3">Food</div>
+          <div *ngSwitchCase="4">Other</div>
+        </td>
+        <td>
+          <button class="btn btn-success" (click)="approveReimb(t)">Approve</button>
+          <button class="btn btn-danger" (click)="denyReimb(t)">Deny</button>
+        </td>
+        
+      </tr>
+     
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div>
+<button class="btn btn-primary" id="goBack" (click)="goBack()">go back</button>
+</div>

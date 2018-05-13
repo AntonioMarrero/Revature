@@ -1,0 +1,105 @@
+What is Java?
+Why do we use Java? What are its benefits?
+What is OOP?
+Pillars of OOP
+Define Inheritance
+Define Polymorphism
+Define Encapsulation
+Define Abstraction
+What is the default value of an int variable declared within class scope?
+What is the default value of a boolean variable declared within block scope?
+What is the entry point of any Java application?
+What is the syntax for the main method?
+What is the difference between the logical operators: & and &&
+What is the order of precedence with Java operators?
+What are the primitive datatypes in Java?
+Difference between == and .equals
+What is a ternary operator?
+What are the different types of conditional statements in Java?
+What are the different types of looping statements in Java?
+What are the different types of branching keywords in Java?
+What is an alternative to using a long chain of else-if statements?
+What is meant by fall-through, with regard to switch statements?
+What datatypes cannot be used within a switch statement?
+Can you use break and continue to alter the flow of an if-statement?
+Why does Java require that the main method be static?
+What is a static initialization block?
+When are static blocks executed by the JVM?
+What are varargs?
+What position must varargs be included at within the parameters section of a method signature?
+What area of memory are primitive datatypes stored in?
+What area of memory are objects stored in?
+How can we force garbage collection in Java?
+What are the access modifiers in java, and the keywords associated with them?
+What is Reflection?
+What is does 'covariant' mean?
+What are the four base classes in Java I/O?
+How can we override a method by changing the throws clause in its method signature?
+How can we override a method by changing the return type in its method signature?
+How can we override a method by changing the access modifier in its method signature?
+Can you override the protected methods inherited from a super class within a different package?
+Can you override the package-private methods inherited from a super class within a different package?
+What is serialization?
+What does the transient keyword do?
+What is deserialization?
+What objects are used in the process of serialization?
+What objects are used in the process of deserialization?
+What is a marker interface?
+Examples of marker interfaces
+What is a functional interface?
+Can a functional interface have one abstract method and one default method?
+What is multiple inheritance, and does Java support it?
+What is the difference between an abstract class and an interface?
+What is a default method in an interface?
+In what version of Java were functional interfaces introduced, and alongside what other key feature?
+What is functional programming?
+Can static methods be overridden?
+What is variable shadowing, and what pillar of OOP does it relate to?
+What is method overloading?
+In what order does Java determine which overloaded method will be used if multiple are compatible for a given parameter?
+Differences between String, StringBuilder, and StringBuffer
+Sub-interfaces of Collection
+Difference between HashMap and HashTable
+Difference between Vector and ArrayList
+Difference between Queue and a Deque
+Examples of concrete implementations of Queue
+Examples of concrete implementations of List
+Examples of concrete implementations of Set
+Examples of concrete implementations of Map
+What is a Map, and is it part of the Collection API?
+What is a thread?
+What is multithreading?
+What is default priority of a thread?
+What is a deadlock?
+What does the keyword 'synchronized' do for us in Java?
+What are the states of a thread in Java?
+How can I create a Thread?
+What method defines the functionality of my thread?
+What method is used to begin the execution of a thread?
+What is an example of a daemon thread?
+In what order do threads execute?
+What Thread class method can I use to let a thread continue until the end of its run() method?
+What does isAlive() tell us?
+What two classes can I use to read from the console?
+Describe the producer/consumer problem
+What are generics used for in Java?
+"Does this code compile as it is currently written? If not, explain why.
+ArrayList myList = new ArrayList();
+myList.add(""Hello!"");
+String value = myList.get(0);"
+What is the difference between method overloading and method overriding?
+"Is this a legal variable initialization?
+float f = 13.3;"
+What is a singleton?
+What is the difference between the Factory and Builder design patterns?
+What does the Observer design pattern accomplish?
+What is the difference between the Singleton and Prototype design patterns?
+What design pattern does the String API leverage in order to efficiently manage memory usage by String objects?
+What is Maven?
+What is JUnit?
+What are the annotations associated with JUnit?
+What is a POM?
+What is the default Maven lifecycle?
+Can I fully test an application using JUnit?
+What is the name of the local Maven repository on you machine?
+What is the central Maven repository?
